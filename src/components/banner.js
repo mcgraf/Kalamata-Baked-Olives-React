@@ -61,7 +61,7 @@ const Banner = (props) => {
 Banner.defaultProps = {
   imageAlt: 'image',
   heading: 'Snack Mix - Natural and Healthy',
-  imageSrc: '/vbnvbnvbn-300h.jpg',
+  imageSrc: '/vbnvbnvbn-300h.webp',
 }
 
 Banner.propTypes = {

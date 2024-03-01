@@ -16,7 +16,7 @@
   background-color: var(--dl-color-gray-white);
 }
 .home-image {
-  width: 87px;
+  width: 126px;
   height: 90px;
   object-fit: cover;
 }
@@ -137,16 +137,20 @@
   width: 100%;
   height: auto;
   display: flex;
+  position: relative;
   margin-top: 96px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 .home-hero1 {
-  height: 403px;
+  flex: 1;
+  height: 540px;
   display: flex;
+  align-self: flex-start;
   background-size: cover;
+  justify-content: center;
   background-color: transparent;
-  background-image: url('https://images.unsplash.com/photo-1534099946341-34fe5ef39eef?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fG9saXZlJTIwZ3JvdmV8ZW58MHx8fHwxNzA4NDMwNTg1fDA&ixlib=rb-4.0.3&w=1500');
+  background-image: url("https://images.unsplash.com/photo-1534099946341-34fe5ef39eef?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fG9saXZlJTIwZ3xlbnwwfHx8fDE3MDg1MjQxNTl8MA&ixlib=rb-4.0.3&w=1500");
 }
 .home-container1 {
   gap: var(--dl-space-space-oneandhalfunits);

@@ -9,14 +9,27 @@ const Products = (props) => {
     <div className="products-container">
       <Helmet>
         <title>Products - Kalamata Baked Olives</title>
+        <meta
+          name="description"
+          content="An innovative new snacking option made with high-quality Kalamata Olives"
+        />
         <meta property="og:title" content="Products - Kalamata Baked Olives" />
+        <meta
+          property="og:description"
+          content="An innovative new snacking option made with high-quality Kalamata Olives"
+        />
       </Helmet>
       <div className="products-header">
         <header
           data-thq="thq-navbar"
           className="navbarContainer products-navbar-interactive"
         >
-          <span className="logo">OLIVESNACKS</span>
+          <img
+            alt="image"
+            src="/kalamata_baked_olives_-05%20(1)-200h.webp"
+            className="products-image"
+          />
+          <span className="logo">kalamata baked olives</span>
           <div data-thq="thq-navbar-nav" className="products-desktop-menu">
             <nav className="products-links">
               <span className="bodySmall">Home</span>
@@ -222,9 +235,9 @@ const Products = (props) => {
         </div>
         <img
           alt="image"
-          src="/kalamata_baked_olives_-01-500h.png"
+          src="/kalamata_baked_olives_-01-500h.webp"
           loading="lazy"
-          className="products-image"
+          className="products-image1"
         />
       </div>
       <div className="products-banner1">
@@ -271,9 +284,9 @@ const Products = (props) => {
         </div>
         <img
           alt="image"
-          src="/kalamata_baked_olives_-02-500h.png"
+          src="/kalamata_baked_olives_-02-500h.webp"
           loading="lazy"
-          className="products-image1"
+          className="products-image2"
         />
       </div>
       <div className="products-banner2">
@@ -321,9 +334,9 @@ const Products = (props) => {
         </div>
         <img
           alt="image"
-          src="/kalamata_baked_olives_-03-500h.png"
+          src="/kalamata_baked_olives_-03-500h.webp"
           loading="lazy"
-          className="products-image2"
+          className="products-image3"
         />
       </div>
       <div className="products-banner3">
@@ -372,7 +385,7 @@ const Products = (props) => {
         </div>
         <img
           alt="pastedImage"
-          src="/kalamata_baked_olives_-04-500h.png"
+          src="/kalamata_baked_olives_-04-500h.webp"
           loading="lazy"
           className="products-pasted-image"
         />
@@ -380,7 +393,7 @@ const Products = (props) => {
       <div className="products-footer">
         <footer className="footerContainer products-footer1">
           <div className="products-container10">
-            <span className="logo">OLIVESNACKS</span>
+            <span className="logo">kalamata baked olives</span>
             <nav className="products-nav1">
               <span className="bodySmall">Home</span>
               <span className="products-nav222 bodySmall">About</span>
