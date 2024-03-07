@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import FeatureCard from '../components/feature-card'
@@ -36,14 +37,14 @@ const Home = (props) => {
           <span className="logo">Kalamata baked olives</span>
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
             <nav className="home-links">
-              <span className="bodySmall">Home</span>
+              <Link to="/" className="home-nav12 bodySmall">
+                Home
+              </Link>
               <span className="home-nav22 bodySmall">About</span>
               <Link to="/products" className="home-nav32">
                 Products
               </Link>
-              <a href="#contact" className="home-nav42 bodySmall">
-                Contact
-              </a>
+              <span className="home-nav42 bodySmall">Contact</span>
             </nav>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
@@ -103,7 +104,7 @@ const Home = (props) => {
       </div>
       <div className="home-hero">
         <div className="home-hero1 heroContainer">
-          <div className="home-container1">
+          <div className="home-container01">
             <h1 className="home-hero-heading">
               <span>
                 Introducing
@@ -188,7 +189,7 @@ const Home = (props) => {
       <div className="home-features">
         <div className="featuresContainer">
           <div className="home-features1">
-            <div className="home-container2">
+            <div className="home-container02">
               <span className="overline">
                 <span>features</span>
                 <br></br>
@@ -264,7 +265,7 @@ const Home = (props) => {
                 </span>
               </span>
             </div>
-            <div className="home-container3">
+            <div className="home-container03">
               <FeatureCard
                 heading="Hand-picked Kalamata Olives"
                 subHeading="Sourced from the region of Messinia, Greece"
@@ -348,7 +349,7 @@ const Home = (props) => {
             <br></br>
             <br></br>
           </p>
-          <div className="home-container4">
+          <div className="home-container04">
             <img
               alt="*Sial Selection Innovation 2022"
               src="/external/sial-200h.webp"
@@ -362,7 +363,7 @@ const Home = (props) => {
       <div className="home-faq">
         <div className="faqContainer">
           <div className="home-faq1">
-            <div className="home-container5">
+            <div className="home-container05">
               <span className="overline">
                 <span>FAQ</span>
                 <br></br>
@@ -375,7 +376,7 @@ const Home = (props) => {
                 <br></br>
               </span>
             </div>
-            <div className="home-container6">
+            <div className="home-container06">
               <Question1
                 answer="Kalamata Baked Olives are made with hand-picked Kalamata Olives from Messinia, Greece, ensuring a unique and authentic flavor."
                 question="What makes Kalamata Baked Olives different from other snacks?"
@@ -393,60 +394,262 @@ const Home = (props) => {
                 question="Can I use Kalamata Baked Olives in recipes?"
               ></Question1>
               <Question1
-                answer="Kalamata Baked Olives are available for purchase online on our website or at select retailers near you."
+                answer="Kalamata Baked Olives are available for purchase at select retailers near you."
                 question="Where can I purchase Kalamata Baked Olives?"
               ></Question1>
             </div>
           </div>
         </div>
       </div>
-      <div id="contact" className="home-contact-banner">
-        <span className="home-text67">
-          <span>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-              volutpat turpis. Mauris luctus rutrum mi ut rhoncus. Integer in
-              dignissim tortor. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed non volutpat turpis. Mauris luctus rutrum mi
-              ut rhoncus. Integer in dignissim tortor. Sed non volutpat turpis.
-              Mauris luctus rutrum mi ut rhoncus. Integer in dignissim ortor.
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
-              />
+      <div className="home-banner2">
+        <div className="home-container07">
+          <div className="home-container08">
+            <div className="home-container09">
+              <Script
+                html={`<div class="formbold-main-wrapper">
+  <!-- Author: FormBold Team -->
+  <!-- Learn More: https://formbold.com -->
+  <div class="formbold-form-wrapper">
+    <form action="https://formbold.com/s/3npzA" method="POST">
+      <div class="formbold-input-flex">
+        <div>
+          <label for="firstname" class="formbold-form-label">First name</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Jane"
+            class="formbold-form-input"
+          />
+        </div>
+        <div>
+          <label for="lastname" class="formbold-form-label">Last name</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Cooper"
+            class="formbold-form-input"
+          />
+        </div>
+      </div>
+
+      <div class="formbold-input-flex">
+        <div>
+          <label for="email" class="formbold-form-label">Mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="jhon@mail.com"
+            class="formbold-form-input"
+          />
+        </div>
+        <div>
+          <label for="phone" class="formbold-form-label">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="(319) 555-0115"
+            class="formbold-form-input"
+          />
+        </div>
+      </div>
+      <div>
+        <label for="message" class="formbold-form-label">Message</label>
+        <textarea
+          rows="6"
+          name="message"
+          id="message"
+          placeholder="Type your message"
+          class="formbold-form-input"
+        ></textarea>
+      </div>
+      <button class="formbold-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+
+  .formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .formbold-input-flex > div {
+    width: 50%;
+  }
+
+  .formbold-input-radio-wrapper {
+    margin-bottom: 28px;
+  }
+  .formbold-radio-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .formbold-radio-label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #07074d;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .formbold-input-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .formbold-radio-checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ec;
+    border-radius: 50%;
+  }
+  .formbold-radio-label
+    .formbold-input-radio:checked
+    ~ .formbold-radio-checkmark {
+    background-color: #6a64f1;
+  }
+  .formbold-radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .formbold-radio-label
+    .formbold-input-radio:checked
+    ~ .formbold-radio-checkmark:after {
+    display: block;
+  }
+
+  .formbold-radio-label .formbold-radio-checkmark:after {
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input::placeholder {
+    color: #536387;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .formbold-form-label {
+    color: #07074d;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .formbold-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #768350;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+</style>
+`}
+              ></Script>
+            </div>
+          </div>
+        </div>
+        <div className="home-testimonial-card">
+          <h1 className="home-text67">Contact Information</h1>
+          <div className="home-container10">
+            <svg viewBox="0 0 585.1428571428571 1024" className="home-icon10">
+              <path d="M438.857 365.714c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM585.143 365.714c0 34.857-4 70.857-18.857 102.286l-208 442.286c-12 25.143-38.286 40.571-65.714 40.571s-53.714-15.429-65.143-40.571l-208.571-442.286c-14.857-31.429-18.857-67.429-18.857-102.286 0-161.714 130.857-292.571 292.571-292.571s292.571 130.857 292.571 292.571z"></path>
+            </svg>
+            <span className="home-text68">
+              Sfaktirias &amp; parodos Poliviou 11, Kalamata, Greece, 24132
             </span>
-            <span>
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
-              />
-            </span>
-          </span>
-        </span>
-        <h2 className="home-text71">Kalamata, Messinia, Greece</h2>
-        <svg viewBox="0 0 1024 1024" className="home-icon10">
-          <path d="M512 490q44 0 75-31t31-75-31-75-75-31-75 31-31 75 31 75 75 31zM512 86q124 0 211 87t87 211q0 62-31 142t-75 150-87 131-73 97l-32 34q-12-14-32-37t-72-92-91-134-71-147-32-144q0-124 87-211t211-87z"></path>
-        </svg>
-        <svg viewBox="0 0 1024 1024" className="home-icon12">
-          <path d="M480 64c-265.096 0-480 214.904-480 480 0 265.098 214.904 480 480 480 265.098 0 480-214.902 480-480 0-265.096-214.902-480-480-480zM751.59 704c8.58-40.454 13.996-83.392 15.758-128h127.446c-3.336 44.196-13.624 87.114-30.68 128h-112.524zM208.41 384c-8.58 40.454-13.996 83.392-15.758 128h-127.444c3.336-44.194 13.622-87.114 30.678-128h112.524zM686.036 384c9.614 40.962 15.398 83.854 17.28 128h-191.316v-128h174.036zM512 320v-187.338c14.59 4.246 29.044 11.37 43.228 21.37 26.582 18.74 52.012 47.608 73.54 83.486 14.882 24.802 27.752 52.416 38.496 82.484h-155.264zM331.232 237.516c21.528-35.878 46.956-64.748 73.54-83.486 14.182-10 28.638-17.124 43.228-21.37v187.34h-155.264c10.746-30.066 23.616-57.68 38.496-82.484zM448 384v128h-191.314c1.88-44.146 7.666-87.038 17.278-128h174.036zM95.888 704c-17.056-40.886-27.342-83.804-30.678-128h127.444c1.762 44.608 7.178 87.546 15.758 128h-112.524zM256.686 576h191.314v128h-174.036c-9.612-40.96-15.398-83.854-17.278-128zM448 768v187.34c-14.588-4.246-29.044-11.372-43.228-21.37-26.584-18.74-52.014-47.61-73.54-83.486-14.882-24.804-27.75-52.418-38.498-82.484h155.266zM628.768 850.484c-21.528 35.876-46.958 64.746-73.54 83.486-14.184 9.998-28.638 17.124-43.228 21.37v-187.34h155.266c-10.746 30.066-23.616 57.68-38.498 82.484zM512 704v-128h191.314c-1.88 44.146-7.666 87.040-17.28 128h-174.034zM767.348 512c-1.762-44.608-7.178-87.546-15.758-128h112.524c17.056 40.886 27.344 83.806 30.68 128h-127.446zM830.658 320h-95.9c-18.638-58.762-44.376-110.294-75.316-151.428 42.536 20.34 81.058 47.616 114.714 81.272 21.48 21.478 40.362 44.938 56.502 70.156zM185.844 249.844c33.658-33.658 72.18-60.932 114.714-81.272-30.942 41.134-56.676 92.666-75.316 151.428h-95.898c16.138-25.218 35.022-48.678 56.5-70.156zM129.344 768h95.898c18.64 58.762 44.376 110.294 75.318 151.43-42.536-20.34-81.058-47.616-114.714-81.274-21.48-21.478-40.364-44.938-56.502-70.156zM774.156 838.156c-33.656 33.658-72.18 60.934-114.714 81.274 30.942-41.134 56.678-92.668 75.316-151.43h95.9c-16.14 25.218-35.022 48.678-56.502 70.156z"></path>
-        </svg>
-        <a
-          href="mailto:kalamatabakedolives@gmail.com?subject="
-          className="home-link"
-        >
-          <h2 className="home-text72">kalamatabakedolives@gmail.com</h2>
-        </a>
-        <h2 className="home-text73">www.kalamatabakedolives.gr</h2>
-        <svg viewBox="0 0 1024 1024" className="home-icon14">
-          <path d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"></path>
-        </svg>
-        <h1 className="home-text74">Contact Us</h1>
+          </div>
+          <div className="home-container11">
+            <svg viewBox="0 0 1024 1024" className="home-icon12">
+              <path d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"></path>
+            </svg>
+            <span className="home-text69">+30 6932478292</span>
+          </div>
+          <div className="home-container12">
+            <svg viewBox="0 0 1024 1024" className="home-icon14">
+              <path d="M512 640q52 0 90-38t38-90-38-90-90-38-90 38-38 90 38 90 90 38zM512 86q176 0 301 125t125 301v62q0 64-43 108t-105 44q-78 0-126-64-64 64-152 64t-151-63-63-151 63-151 151-63 151 63 63 151v62q0 26 19 46t45 20 45-20 19-46v-62q0-140-101-241t-241-101-241 101-101 241 101 241 241 101h214v84h-214q-176 0-301-125t-125-301 125-301 301-125z"></path>
+            </svg>
+            <span className="home-text70">sales@kalamatabakedolives.gr</span>
+          </div>
+          <div className="home-testimonial">
+            <span className="home-text71">kalamata baked olives</span>
+            <img
+              alt="profile"
+              src="/kalamata_baked_olives_-05%20(1)-200h.webp"
+              loading="lazy"
+              className="home-image2"
+            />
+          </div>
+        </div>
       </div>
       <div className="home-footer">
-        <footer className="home-footer1 footerContainer">
-          <div className="home-container7">
+        <footer className="footerContainer home-footer1">
+          <div className="home-container13">
             <span className="logo">kalamata baked olives</span>
             <nav className="home-nav1">
               <span className="bodySmall">Home</span>
@@ -456,8 +659,8 @@ const Home = (props) => {
             </nav>
           </div>
           <div className="home-separator"></div>
-          <div className="home-container8">
-            <span className="bodySmall home-text75">
+          <div className="home-container14">
+            <span className="bodySmall home-text72">
               © 2024 Kalamata Baked Olives., All Rights Reserved.
             </span>
             <div className="home-icon-group1">

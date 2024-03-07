@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -32,10 +33,16 @@ const Products = (props) => {
           <span className="logo">kalamata baked olives</span>
           <div data-thq="thq-navbar-nav" className="products-desktop-menu">
             <nav className="products-links">
-              <span className="bodySmall">Home</span>
+              <Link to="/" className="products-nav12 bodySmall">
+                Home
+              </Link>
               <span className="products-nav22 bodySmall">About</span>
-              <span className="products-nav32 bodySmall">Products</span>
-              <span className="products-nav42 bodySmall">Contact</span>
+              <Link to="/products" className="products-nav32 bodySmall">
+                Products
+              </Link>
+              <Link to="/products" className="products-nav42 bodySmall">
+                Contact
+              </Link>
             </nav>
           </div>
           <div data-thq="thq-burger-menu" className="products-burger-menu">
@@ -395,10 +402,16 @@ const Products = (props) => {
           <div className="products-container10">
             <span className="logo">kalamata baked olives</span>
             <nav className="products-nav1">
-              <span className="bodySmall">Home</span>
+              <Link to="/" className="products-nav122 bodySmall">
+                Home
+              </Link>
               <span className="products-nav222 bodySmall">About</span>
-              <span className="products-nav322 bodySmall">Products</span>
-              <span className="products-nav422 bodySmall">Contact</span>
+              <Link to="/products" className="products-nav322 bodySmall">
+                Products
+              </Link>
+              <Link to="/" className="products-nav422 bodySmall">
+                Contact
+              </Link>
             </nav>
           </div>
           <div className="products-separator"></div>
